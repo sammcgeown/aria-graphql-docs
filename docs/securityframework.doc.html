@@ -1,0 +1,1888 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@clr/ui/clr-ui-dark.min.css" />
+    <title>SecurityFramework</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
+</head>
+<body class="slds-scrollable--y">
+    <nav class="slds-grid slds-grid--vertical slds-col--rule-right">
+        <header class="slds-p-around--medium slds-col slds-shrik slds-grow-none">
+            <button class="slds-button slds-button--icon slds-float--right js-toggle-navigation less-than-medium">
+                <i class="material-icons">close</i>
+            </button>
+                <center><a href="/ensemble/docs" target="_blank" style="display:block;padding:1rem 3rem"><img src="aria-hub.png"/></a><a href="/ensemble/altair">Try it out!</a></center>
+            <div class="slds-p-top--small">
+                <input id="type-search" type="text" placeholder="Search a type" autofocus="" class="slds-input" />
+            </div>
+        </header>
+        <div id="navication-scroll" class="slds-scrollable--y slds-col slds-grow">
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Schema</h4>
+    <ul>
+        <li  title="Query">
+            <a href="query.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Query
+            </a>
+        </li>
+        <li  title="Mutation">
+            <a href="mutation.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Mutation
+            </a>
+        </li>
+        <li  title="Subscription">
+            <a href="subscription.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Subscription
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Scalars</h4>
+    <ul>
+        <li  title="Boolean">
+            <a href="boolean.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Boolean
+            </a>
+        </li>
+        <li  title="Byte">
+            <a href="byte.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Byte
+            </a>
+        </li>
+        <li  title="DateTime">
+            <a href="datetime.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DateTime
+            </a>
+        </li>
+        <li  title="EntityId">
+            <a href="entityid.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntityId
+            </a>
+        </li>
+        <li  title="Float">
+            <a href="float.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Float
+            </a>
+        </li>
+        <li  title="ID">
+            <a href="id.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ID
+            </a>
+        </li>
+        <li  title="Int">
+            <a href="int.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Int
+            </a>
+        </li>
+        <li  title="JSON">
+            <a href="json.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                JSON
+            </a>
+        </li>
+        <li  title="LocalizedString">
+            <a href="localizedstring.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                LocalizedString
+            </a>
+        </li>
+        <li  title="Long">
+            <a href="long.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Long
+            </a>
+        </li>
+        <li  title="Object">
+            <a href="object.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Object
+            </a>
+        </li>
+        <li  title="String">
+            <a href="string.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                String
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Enums</h4>
+    <ul>
+        <li  title="ActionDefinitionValidationFailureType">
+            <a href="actiondefinitionvalidationfailuretype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ActionDefinitionValidationFailureType
+            </a>
+        </li>
+        <li  title="ActionRequestStatus">
+            <a href="actionrequeststatus.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ActionRequestStatus
+            </a>
+        </li>
+        <li  title="ActionType">
+            <a href="actiontype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ActionType
+            </a>
+        </li>
+        <li  title="CostingListPriceUnit">
+            <a href="costinglistpriceunit.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CostingListPriceUnit
+            </a>
+        </li>
+        <li  title="EntityAggregationType">
+            <a href="entityaggregationtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntityAggregationType
+            </a>
+        </li>
+        <li  title="EntityGraphPartitionNames">
+            <a href="entitygraphpartitionnames.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntityGraphPartitionNames
+            </a>
+        </li>
+        <li  title="EntityGroupFlavor">
+            <a href="entitygroupflavor.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntityGroupFlavor
+            </a>
+        </li>
+        <li  title="EntityPropertyType">
+            <a href="entitypropertytype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntityPropertyType
+            </a>
+        </li>
+        <li  title="EntitySSQLPartitionInfo">
+            <a href="entityssqlpartitioninfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntitySSQLPartitionInfo
+            </a>
+        </li>
+        <li  title="EntitySSQLQueryType">
+            <a href="entityssqlquerytype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntitySSQLQueryType
+            </a>
+        </li>
+        <li  title="EntityTraversalDirection">
+            <a href="entitytraversaldirection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntityTraversalDirection
+            </a>
+        </li>
+        <li  title="EntityTraversalLogicalOperator">
+            <a href="entitytraversallogicaloperator.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntityTraversalLogicalOperator
+            </a>
+        </li>
+        <li  title="EntityTraversalScope">
+            <a href="entitytraversalscope.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntityTraversalScope
+            </a>
+        </li>
+        <li  title="EntityTreeNodeType">
+            <a href="entitytreenodetype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntityTreeNodeType
+            </a>
+        </li>
+        <li  title="HyperLinkHttpRequestMethod">
+            <a href="hyperlinkhttprequestmethod.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                HyperLinkHttpRequestMethod
+            </a>
+        </li>
+        <li  title="InsightImpactDimension">
+            <a href="insightimpactdimension.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InsightImpactDimension
+            </a>
+        </li>
+        <li  title="InsightImpactMeasure">
+            <a href="insightimpactmeasure.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InsightImpactMeasure
+            </a>
+        </li>
+        <li  title="InsightStatus">
+            <a href="insightstatus.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InsightStatus
+            </a>
+        </li>
+        <li  title="InsightTriggerType">
+            <a href="insighttriggertype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InsightTriggerType
+            </a>
+        </li>
+        <li  title="ManagementEndpointAggregationType">
+            <a href="managementendpointaggregationtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointAggregationType
+            </a>
+        </li>
+        <li  title="ManagementEndpointCredentialType">
+            <a href="managementendpointcredentialtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointCredentialType
+            </a>
+        </li>
+        <li  title="ManagementEndpointDeploymentStatus">
+            <a href="managementendpointdeploymentstatus.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointDeploymentStatus
+            </a>
+        </li>
+        <li  title="ManagementEndpointPropertySemantic">
+            <a href="managementendpointpropertysemantic.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointPropertySemantic
+            </a>
+        </li>
+        <li  title="ManagementEndpointPropertyType">
+            <a href="managementendpointpropertytype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointPropertyType
+            </a>
+        </li>
+        <li  title="ManagementEndpointRequestStatus">
+            <a href="managementendpointrequeststatus.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointRequestStatus
+            </a>
+        </li>
+        <li  title="ManagementEndpointServiceType">
+            <a href="managementendpointservicetype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointServiceType
+            </a>
+        </li>
+        <li  title="ManagementEndpointStatusCause">
+            <a href="managementendpointstatuscause.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointStatusCause
+            </a>
+        </li>
+        <li  title="ManagementEndpointStatusEnum">
+            <a href="managementendpointstatusenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointStatusEnum
+            </a>
+        </li>
+        <li  title="ManagementEndpointStatusType">
+            <a href="managementendpointstatustype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointStatusType
+            </a>
+        </li>
+        <li  title="ManagementEndpointType">
+            <a href="managementendpointtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointType
+            </a>
+        </li>
+        <li  title="MigrationAggregationFunction">
+            <a href="migrationaggregationfunction.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationAggregationFunction
+            </a>
+        </li>
+        <li  title="MigrationCommitPeriod">
+            <a href="migrationcommitperiod.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationCommitPeriod
+            </a>
+        </li>
+        <li  title="MigrationEntityExportType">
+            <a href="migrationentityexporttype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationEntityExportType
+            </a>
+        </li>
+        <li  title="MigrationFlowDirection">
+            <a href="migrationflowdirection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationFlowDirection
+            </a>
+        </li>
+        <li  title="MigrationGroupByResourceType">
+            <a href="migrationgroupbyresourcetype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationGroupByResourceType
+            </a>
+        </li>
+        <li  title="MigrationGroupByType">
+            <a href="migrationgroupbytype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationGroupByType
+            </a>
+        </li>
+        <li  title="MigrationGroupCategoryType">
+            <a href="migrationgroupcategorytype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationGroupCategoryType
+            </a>
+        </li>
+        <li  title="MigrationObjectType">
+            <a href="migrationobjecttype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationObjectType
+            </a>
+        </li>
+        <li  title="MigrationPaymentTerm">
+            <a href="migrationpaymentterm.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationPaymentTerm
+            </a>
+        </li>
+        <li  title="MigrationReplicationSetting">
+            <a href="migrationreplicationsetting.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationReplicationSetting
+            </a>
+        </li>
+        <li  title="MigrationSDDCHostType">
+            <a href="migrationsddchosttype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationSDDCHostType
+            </a>
+        </li>
+        <li  title="MigrationUnit">
+            <a href="migrationunit.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationUnit
+            </a>
+        </li>
+        <li  title="NetworkCommunicationAggregation">
+            <a href="networkcommunicationaggregation.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NetworkCommunicationAggregation
+            </a>
+        </li>
+        <li  title="NetworkFlowType">
+            <a href="networkflowtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NetworkFlowType
+            </a>
+        </li>
+        <li  title="ObservationStatus">
+            <a href="observationstatus.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ObservationStatus
+            </a>
+        </li>
+        <li  title="QueryFilterOperator">
+            <a href="queryfilteroperator.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                QueryFilterOperator
+            </a>
+        </li>
+        <li  title="QuerySortOrder">
+            <a href="querysortorder.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                QuerySortOrder
+            </a>
+        </li>
+        <li  title="SecurityAggregationType">
+            <a href="securityaggregationtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SecurityAggregationType
+            </a>
+        </li>
+        <li  title="SecurityFindingCategory">
+            <a href="securityfindingcategory.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SecurityFindingCategory
+            </a>
+        </li>
+        <li  title="SecurityFindingReason">
+            <a href="securityfindingreason.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SecurityFindingReason
+            </a>
+        </li>
+        <li  title="SecurityFindingSeverity">
+            <a href="securityfindingseverity.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SecurityFindingSeverity
+            </a>
+        </li>
+        <li  title="SecurityFindingSource">
+            <a href="securityfindingsource.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SecurityFindingSource
+            </a>
+        </li>
+        <li  title="SecurityFindingStatus">
+            <a href="securityfindingstatus.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SecurityFindingStatus
+            </a>
+        </li>
+        <li  title="SecurityFindingType">
+            <a href="securityfindingtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SecurityFindingType
+            </a>
+        </li>
+        <li  title="StatsRollupType">
+            <a href="statsrolluptype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StatsRollupType
+            </a>
+        </li>
+        <li  title="__DirectiveLocation">
+            <a href="directivelocation.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __DirectiveLocation
+            </a>
+        </li>
+        <li  title="__TypeKind">
+            <a href="typekind.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __TypeKind
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Interfaces</h4>
+    <ul>
+        <li  title="HyperLinked">
+            <a href="hyperlinked.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                HyperLinked
+            </a>
+        </li>
+        <li  title="MigrationEntity">
+            <a href="migrationentity.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationEntity
+            </a>
+        </li>
+        <li  title="Node">
+            <a href="node.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Node
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Objects</h4>
+    <ul>
+        <li  title="ActionDefinition">
+            <a href="actiondefinition.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ActionDefinition
+            </a>
+        </li>
+        <li  title="ActionDefinitionEdge">
+            <a href="actiondefinitionedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ActionDefinitionEdge
+            </a>
+        </li>
+        <li  title="ActionDefinitionsConnection">
+            <a href="actiondefinitionsconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ActionDefinitionsConnection
+            </a>
+        </li>
+        <li  title="ActionMutations">
+            <a href="actionmutations.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ActionMutations
+            </a>
+        </li>
+        <li  title="ActionQueries">
+            <a href="actionqueries.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ActionQueries
+            </a>
+        </li>
+        <li  title="ActionRequest">
+            <a href="actionrequest.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ActionRequest
+            </a>
+        </li>
+        <li  title="ActionRequestConnection">
+            <a href="actionrequestconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ActionRequestConnection
+            </a>
+        </li>
+        <li  title="ActionRequestEdge">
+            <a href="actionrequestedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ActionRequestEdge
+            </a>
+        </li>
+        <li  title="ActionRequestEvent">
+            <a href="actionrequestevent.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ActionRequestEvent
+            </a>
+        </li>
+        <li  title="AdminOnboardingStatus">
+            <a href="adminonboardingstatus.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AdminOnboardingStatus
+            </a>
+        </li>
+        <li  title="AdminQueries">
+            <a href="adminqueries.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AdminQueries
+            </a>
+        </li>
+        <li  title="AuthAccessToken">
+            <a href="authaccesstoken.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AuthAccessToken
+            </a>
+        </li>
+        <li  title="AuthMutation">
+            <a href="authmutation.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AuthMutation
+            </a>
+        </li>
+        <li  title="CostingEntityInfo">
+            <a href="costingentityinfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CostingEntityInfo
+            </a>
+        </li>
+        <li  title="CostingListPrice">
+            <a href="costinglistprice.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CostingListPrice
+            </a>
+        </li>
+        <li  title="CostingListPriceProperty">
+            <a href="costinglistpriceproperty.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CostingListPriceProperty
+            </a>
+        </li>
+        <li  title="DerivedDataQuery">
+            <a href="deriveddataquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DerivedDataQuery
+            </a>
+        </li>
+        <li  title="DerivedDataResponse">
+            <a href="deriveddataresponse.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DerivedDataResponse
+            </a>
+        </li>
+        <li  title="Entity">
+            <a href="entity.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Entity
+            </a>
+        </li>
+        <li  title="EntityActions">
+            <a href="entityactions.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntityActions
+            </a>
+        </li>
+        <li  title="EntityAggregationItem">
+            <a href="entityaggregationitem.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntityAggregationItem
+            </a>
+        </li>
+        <li  title="EntityAggregationItems">
+            <a href="entityaggregationitems.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntityAggregationItems
+            </a>
+        </li>
+        <li  title="EntityAggregations">
+            <a href="entityaggregations.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntityAggregations
+            </a>
+        </li>
+        <li  title="EntityConnection">
+            <a href="entityconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntityConnection
+            </a>
+        </li>
+        <li  title="EntityEdge">
+            <a href="entityedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntityEdge
+            </a>
+        </li>
+        <li  title="EntityEdgeTraversalPath">
+            <a href="entityedgetraversalpath.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntityEdgeTraversalPath
+            </a>
+        </li>
+        <li  title="EntityGroupMutation">
+            <a href="entitygroupmutation.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntityGroupMutation
+            </a>
+        </li>
+        <li  title="EntityNamespace">
+            <a href="entitynamespace.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntityNamespace
+            </a>
+        </li>
+        <li  title="EntityProperty">
+            <a href="entityproperty.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntityProperty
+            </a>
+        </li>
+        <li  title="EntityQuery">
+            <a href="entityquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntityQuery
+            </a>
+        </li>
+        <li  title="EntityRelationship">
+            <a href="entityrelationship.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntityRelationship
+            </a>
+        </li>
+        <li  title="EntityRelationshipConnection">
+            <a href="entityrelationshipconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntityRelationshipConnection
+            </a>
+        </li>
+        <li  title="EntityRelationshipEdge">
+            <a href="entityrelationshipedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntityRelationshipEdge
+            </a>
+        </li>
+        <li  title="EntitySSQLAutocompleteResponse">
+            <a href="entityssqlautocompleteresponse.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntitySSQLAutocompleteResponse
+            </a>
+        </li>
+        <li  title="EntitySSQLQuery">
+            <a href="entityssqlquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntitySSQLQuery
+            </a>
+        </li>
+        <li  title="EntitySSQLQueryResponse">
+            <a href="entityssqlqueryresponse.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntitySSQLQueryResponse
+            </a>
+        </li>
+        <li  title="EntitySSQLTrigger">
+            <a href="entityssqltrigger.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntitySSQLTrigger
+            </a>
+        </li>
+        <li  title="EntitySSQLValidationResponse">
+            <a href="entityssqlvalidationresponse.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntitySSQLValidationResponse
+            </a>
+        </li>
+        <li  title="EntitySubscription">
+            <a href="entitysubscription.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntitySubscription
+            </a>
+        </li>
+        <li  title="EntityTreeNode">
+            <a href="entitytreenode.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntityTreeNode
+            </a>
+        </li>
+        <li  title="HyperLink">
+            <a href="hyperlink.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                HyperLink
+            </a>
+        </li>
+        <li  title="HyperlinkQuery">
+            <a href="hyperlinkquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                HyperlinkQuery
+            </a>
+        </li>
+        <li  title="Insight">
+            <a href="insight.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Insight
+            </a>
+        </li>
+        <li  title="InsightConnection">
+            <a href="insightconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InsightConnection
+            </a>
+        </li>
+        <li  title="InsightEdge">
+            <a href="insightedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InsightEdge
+            </a>
+        </li>
+        <li  title="InsightImpact">
+            <a href="insightimpact.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InsightImpact
+            </a>
+        </li>
+        <li  title="InsightQuery">
+            <a href="insightquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InsightQuery
+            </a>
+        </li>
+        <li  title="InsightReclaimableResourceAttribute">
+            <a href="insightreclaimableresourceattribute.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InsightReclaimableResourceAttribute
+            </a>
+        </li>
+        <li  title="InsightReclaimableResourceInfo">
+            <a href="insightreclaimableresourceinfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InsightReclaimableResourceInfo
+            </a>
+        </li>
+        <li  title="InsightReclamationGroupInfo">
+            <a href="insightreclamationgroupinfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InsightReclamationGroupInfo
+            </a>
+        </li>
+        <li  title="InsightReclamationInfo">
+            <a href="insightreclamationinfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InsightReclamationInfo
+            </a>
+        </li>
+        <li  title="InsightRemediation">
+            <a href="insightremediation.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InsightRemediation
+            </a>
+        </li>
+        <li  title="InsightRemediationAction">
+            <a href="insightremediationaction.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InsightRemediationAction
+            </a>
+        </li>
+        <li  title="InsightRemediationRecommendation">
+            <a href="insightremediationrecommendation.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InsightRemediationRecommendation
+            </a>
+        </li>
+        <li  title="InsightStats">
+            <a href="insightstats.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InsightStats
+            </a>
+        </li>
+        <li  title="InsightSubscription">
+            <a href="insightsubscription.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InsightSubscription
+            </a>
+        </li>
+        <li  title="ManagementEndpoint">
+            <a href="managementendpoint.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpoint
+            </a>
+        </li>
+        <li  title="ManagementEndpointAgentDownloadInfo">
+            <a href="managementendpointagentdownloadinfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointAgentDownloadInfo
+            </a>
+        </li>
+        <li  title="ManagementEndpointAggregationItem">
+            <a href="managementendpointaggregationitem.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointAggregationItem
+            </a>
+        </li>
+        <li  title="ManagementEndpointAggregationItems">
+            <a href="managementendpointaggregationitems.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointAggregationItems
+            </a>
+        </li>
+        <li  title="ManagementEndpointAggregations">
+            <a href="managementendpointaggregations.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointAggregations
+            </a>
+        </li>
+        <li  title="ManagementEndpointConnection">
+            <a href="managementendpointconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointConnection
+            </a>
+        </li>
+        <li  title="ManagementEndpointCredential">
+            <a href="managementendpointcredential.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointCredential
+            </a>
+        </li>
+        <li  title="ManagementEndpointCredentialConnection">
+            <a href="managementendpointcredentialconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointCredentialConnection
+            </a>
+        </li>
+        <li  title="ManagementEndpointCredentialDefinition">
+            <a href="managementendpointcredentialdefinition.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointCredentialDefinition
+            </a>
+        </li>
+        <li  title="ManagementEndpointCredentialEdge">
+            <a href="managementendpointcredentialedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointCredentialEdge
+            </a>
+        </li>
+        <li  title="ManagementEndpointCredentialMapping">
+            <a href="managementendpointcredentialmapping.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointCredentialMapping
+            </a>
+        </li>
+        <li  title="ManagementEndpointCredentialPropertyDefinition">
+            <a href="managementendpointcredentialpropertydefinition.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointCredentialPropertyDefinition
+            </a>
+        </li>
+        <li  title="ManagementEndpointDefinition">
+            <a href="managementendpointdefinition.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointDefinition
+            </a>
+        </li>
+        <li  title="ManagementEndpointDeployment">
+            <a href="managementendpointdeployment.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointDeployment
+            </a>
+        </li>
+        <li  title="ManagementEndpointDeployToCloudProxyAgentResponse">
+            <a href="managementendpointdeploytocloudproxyagentresponse.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointDeployToCloudProxyAgentResponse
+            </a>
+        </li>
+        <li  title="ManagementEndpointEdge">
+            <a href="managementendpointedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointEdge
+            </a>
+        </li>
+        <li  title="ManagementEndpointEventStreamScriptDownloadInfo">
+            <a href="managementendpointeventstreamscriptdownloadinfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointEventStreamScriptDownloadInfo
+            </a>
+        </li>
+        <li  title="ManagementEndpointMutation">
+            <a href="managementendpointmutation.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointMutation
+            </a>
+        </li>
+        <li  title="ManagementEndpointOneTimeKey">
+            <a href="managementendpointonetimekey.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointOneTimeKey
+            </a>
+        </li>
+        <li  title="ManagementEndpointProperty">
+            <a href="managementendpointproperty.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointProperty
+            </a>
+        </li>
+        <li  title="ManagementEndpointPropertyDefinition">
+            <a href="managementendpointpropertydefinition.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointPropertyDefinition
+            </a>
+        </li>
+        <li  title="ManagementEndpointPropertyMetadata">
+            <a href="managementendpointpropertymetadata.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointPropertyMetadata
+            </a>
+        </li>
+        <li  title="ManagementEndpointPropertyService">
+            <a href="managementendpointpropertyservice.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointPropertyService
+            </a>
+        </li>
+        <li  title="ManagementEndpointQuery">
+            <a href="managementendpointquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointQuery
+            </a>
+        </li>
+        <li  title="ManagementEndpointResponse">
+            <a href="managementendpointresponse.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointResponse
+            </a>
+        </li>
+        <li  title="ManagementEndpointStatus">
+            <a href="managementendpointstatus.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointStatus
+            </a>
+        </li>
+        <li  title="ManagementEndpointStatusInfo">
+            <a href="managementendpointstatusinfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointStatusInfo
+            </a>
+        </li>
+        <li  title="MigrationAdminAssumption">
+            <a href="migrationadminassumption.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationAdminAssumption
+            </a>
+        </li>
+        <li  title="MigrationAggregationData">
+            <a href="migrationaggregationdata.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationAggregationData
+            </a>
+        </li>
+        <li  title="MigrationAssessmentEntity">
+            <a href="migrationassessmententity.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationAssessmentEntity
+            </a>
+        </li>
+        <li  title="MigrationAssumptionGroupEntity">
+            <a href="migrationassumptiongroupentity.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationAssumptionGroupEntity
+            </a>
+        </li>
+        <li  title="MigrationBaseEntity">
+            <a href="migrationbaseentity.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationBaseEntity
+            </a>
+        </li>
+        <li  title="MigrationBasicEntityFilterListOutput">
+            <a href="migrationbasicentityfilterlistoutput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationBasicEntityFilterListOutput
+            </a>
+        </li>
+        <li  title="MigrationBasicEntityFilterOutput">
+            <a href="migrationbasicentityfilteroutput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationBasicEntityFilterOutput
+            </a>
+        </li>
+        <li  title="MigrationClusterList">
+            <a href="migrationclusterlist.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationClusterList
+            </a>
+        </li>
+        <li  title="MigrationClusters">
+            <a href="migrationclusters.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationClusters
+            </a>
+        </li>
+        <li  title="MigrationComputeAssumptionGroup">
+            <a href="migrationcomputeassumptiongroup.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationComputeAssumptionGroup
+            </a>
+        </li>
+        <li  title="MigrationCost">
+            <a href="migrationcost.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationCost
+            </a>
+        </li>
+        <li  title="MigrationCostOfOwnershipEntity">
+            <a href="migrationcostofownershipentity.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationCostOfOwnershipEntity
+            </a>
+        </li>
+        <li  title="MigrationCostValue">
+            <a href="migrationcostvalue.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationCostValue
+            </a>
+        </li>
+        <li  title="MigrationCustomEntityTag">
+            <a href="migrationcustomentitytag.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationCustomEntityTag
+            </a>
+        </li>
+        <li  title="MigrationDatacenterAssumption">
+            <a href="migrationdatacenterassumption.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationDatacenterAssumption
+            </a>
+        </li>
+        <li  title="MigrationDependencyGraph">
+            <a href="migrationdependencygraph.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationDependencyGraph
+            </a>
+        </li>
+        <li  title="MigrationDependencyGraphEdge">
+            <a href="migrationdependencygraphedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationDependencyGraphEdge
+            </a>
+        </li>
+        <li  title="MigrationDependencyGraphNode">
+            <a href="migrationdependencygraphnode.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationDependencyGraphNode
+            </a>
+        </li>
+        <li  title="MigrationDependencyGraphProperty">
+            <a href="migrationdependencygraphproperty.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationDependencyGraphProperty
+            </a>
+        </li>
+        <li  title="MigrationEntityConnection">
+            <a href="migrationentityconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationEntityConnection
+            </a>
+        </li>
+        <li  title="MigrationEntityEdge">
+            <a href="migrationentityedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationEntityEdge
+            </a>
+        </li>
+        <li  title="MigrationEntityTraversalOutput">
+            <a href="migrationentitytraversaloutput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationEntityTraversalOutput
+            </a>
+        </li>
+        <li  title="MigrationGeneralAssumption">
+            <a href="migrationgeneralassumption.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationGeneralAssumption
+            </a>
+        </li>
+        <li  title="MigrationGroupedAggregationConnection">
+            <a href="migrationgroupedaggregationconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationGroupedAggregationConnection
+            </a>
+        </li>
+        <li  title="MigrationGroupedAggregationData">
+            <a href="migrationgroupedaggregationdata.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationGroupedAggregationData
+            </a>
+        </li>
+        <li  title="MigrationGroupedAggregationEdge">
+            <a href="migrationgroupedaggregationedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationGroupedAggregationEdge
+            </a>
+        </li>
+        <li  title="MigrationHostBreakupList">
+            <a href="migrationhostbreakuplist.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationHostBreakupList
+            </a>
+        </li>
+        <li  title="MigrationHostGroupsAssumptions">
+            <a href="migrationhostgroupsassumptions.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationHostGroupsAssumptions
+            </a>
+        </li>
+        <li  title="MigrationInventoryGroup">
+            <a href="migrationinventorygroup.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationInventoryGroup
+            </a>
+        </li>
+        <li  title="MigrationMutation">
+            <a href="migrationmutation.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationMutation
+            </a>
+        </li>
+        <li  title="MigrationNetworkAssumption">
+            <a href="migrationnetworkassumption.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationNetworkAssumption
+            </a>
+        </li>
+        <li  title="MigrationOnPremProfile">
+            <a href="migrationonpremprofile.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationOnPremProfile
+            </a>
+        </li>
+        <li  title="MigrationOSAssumptions">
+            <a href="migrationosassumptions.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationOSAssumptions
+            </a>
+        </li>
+        <li  title="MigrationPricingConfig">
+            <a href="migrationpricingconfig.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationPricingConfig
+            </a>
+        </li>
+        <li  title="MigrationQuery">
+            <a href="migrationquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationQuery
+            </a>
+        </li>
+        <li  title="MigrationQueryFilterOutput">
+            <a href="migrationqueryfilteroutput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationQueryFilterOutput
+            </a>
+        </li>
+        <li  title="MigrationRaidConfiguration">
+            <a href="migrationraidconfiguration.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationRaidConfiguration
+            </a>
+        </li>
+        <li  title="MigrationResourceBreakupList">
+            <a href="migrationresourcebreakuplist.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationResourceBreakupList
+            </a>
+        </li>
+        <li  title="MigrationResourceOutlier">
+            <a href="migrationresourceoutlier.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationResourceOutlier
+            </a>
+        </li>
+        <li  title="MigrationResourceOverCommit">
+            <a href="migrationresourceovercommit.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationResourceOverCommit
+            </a>
+        </li>
+        <li  title="MigrationSDDCList">
+            <a href="migrationsddclist.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationSDDCList
+            </a>
+        </li>
+        <li  title="MigrationSizerRecommendation">
+            <a href="migrationsizerrecommendation.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationSizerRecommendation
+            </a>
+        </li>
+        <li  title="MigrationSizingConfig">
+            <a href="migrationsizingconfig.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationSizingConfig
+            </a>
+        </li>
+        <li  title="MigrationSoftwareAssumptions">
+            <a href="migrationsoftwareassumptions.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationSoftwareAssumptions
+            </a>
+        </li>
+        <li  title="MigrationStorageAssumption">
+            <a href="migrationstorageassumption.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationStorageAssumption
+            </a>
+        </li>
+        <li  title="MigrationStorageConfiguration">
+            <a href="migrationstorageconfiguration.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationStorageConfiguration
+            </a>
+        </li>
+        <li  title="MigrationSupportCostAssumptions">
+            <a href="migrationsupportcostassumptions.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationSupportCostAssumptions
+            </a>
+        </li>
+        <li  title="MigrationVmcProfile">
+            <a href="migrationvmcprofile.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationVmcProfile
+            </a>
+        </li>
+        <li  title="MigrationVmExceptionInfo">
+            <a href="migrationvmexceptioninfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationVmExceptionInfo
+            </a>
+        </li>
+        <li  title="MigrationVmExceptions">
+            <a href="migrationvmexceptions.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationVmExceptions
+            </a>
+        </li>
+        <li  title="NetworkCommunication">
+            <a href="networkcommunication.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NetworkCommunication
+            </a>
+        </li>
+        <li  title="NetworkCommunicationDetail">
+            <a href="networkcommunicationdetail.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NetworkCommunicationDetail
+            </a>
+        </li>
+        <li  title="NetworkCommunicationEndpoint">
+            <a href="networkcommunicationendpoint.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NetworkCommunicationEndpoint
+            </a>
+        </li>
+        <li  title="NetworkCommunicationSummary">
+            <a href="networkcommunicationsummary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NetworkCommunicationSummary
+            </a>
+        </li>
+        <li  title="NetworkCommunicationSummaryList">
+            <a href="networkcommunicationsummarylist.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NetworkCommunicationSummaryList
+            </a>
+        </li>
+        <li  title="NetworkData">
+            <a href="networkdata.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NetworkData
+            </a>
+        </li>
+        <li  title="NetworkEntityFlowCountByFlowTypeConnection">
+            <a href="networkentityflowcountbyflowtypeconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NetworkEntityFlowCountByFlowTypeConnection
+            </a>
+        </li>
+        <li  title="NetworkEntityFlowCountByFlowTypeEntry">
+            <a href="networkentityflowcountbyflowtypeentry.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NetworkEntityFlowCountByFlowTypeEntry
+            </a>
+        </li>
+        <li  title="NetworkFlowCount">
+            <a href="networkflowcount.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NetworkFlowCount
+            </a>
+        </li>
+        <li  title="NetworkFlowData">
+            <a href="networkflowdata.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NetworkFlowData
+            </a>
+        </li>
+        <li  title="NetworkFlowSummary">
+            <a href="networkflowsummary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NetworkFlowSummary
+            </a>
+        </li>
+        <li  title="NetworkFlowSummaryEntry">
+            <a href="networkflowsummaryentry.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NetworkFlowSummaryEntry
+            </a>
+        </li>
+        <li  title="NetworkFlowTypeDetailsForEntityType">
+            <a href="networkflowtypedetailsforentitytype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NetworkFlowTypeDetailsForEntityType
+            </a>
+        </li>
+        <li  title="NetworkHybridConnectivityUtilization">
+            <a href="networkhybridconnectivityutilization.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NetworkHybridConnectivityUtilization
+            </a>
+        </li>
+        <li  title="NetworkHybridConnectivityUtilizationEntry">
+            <a href="networkhybridconnectivityutilizationentry.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NetworkHybridConnectivityUtilizationEntry
+            </a>
+        </li>
+        <li  title="NetworkHybridConnectivityUtilizationSummary">
+            <a href="networkhybridconnectivityutilizationsummary.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NetworkHybridConnectivityUtilizationSummary
+            </a>
+        </li>
+        <li  title="NetworkOverview">
+            <a href="networkoverview.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NetworkOverview
+            </a>
+        </li>
+        <li  title="NetworkQuery">
+            <a href="networkquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NetworkQuery
+            </a>
+        </li>
+        <li  title="NetworkTrafficData">
+            <a href="networktrafficdata.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NetworkTrafficData
+            </a>
+        </li>
+        <li  title="Observation">
+            <a href="observation.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Observation
+            </a>
+        </li>
+        <li  title="PageInfo">
+            <a href="pageinfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PageInfo
+            </a>
+        </li>
+        <li  title="SecurityAggregationItem">
+            <a href="securityaggregationitem.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SecurityAggregationItem
+            </a>
+        </li>
+        <li  title="SecurityAggregationItems">
+            <a href="securityaggregationitems.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SecurityAggregationItems
+            </a>
+        </li>
+        <li  title="SecurityAggregations">
+            <a href="securityaggregations.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SecurityAggregations
+            </a>
+        </li>
+        <li  title="SecurityEntityInfo">
+            <a href="securityentityinfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SecurityEntityInfo
+            </a>
+        </li>
+        <li  title="SecurityFinding">
+            <a href="securityfinding.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SecurityFinding
+            </a>
+        </li>
+        <li  title="SecurityFindingsConnection">
+            <a href="securityfindingsconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SecurityFindingsConnection
+            </a>
+        </li>
+        <li  title="SecurityFindingsEdge">
+            <a href="securityfindingsedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SecurityFindingsEdge
+            </a>
+        </li>
+        <li class="slds-is-active" title="SecurityFramework">
+            <a href="securityframework.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SecurityFramework
+            </a>
+        </li>
+        <li  title="SecurityFrameworksConnection">
+            <a href="securityframeworksconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SecurityFrameworksConnection
+            </a>
+        </li>
+        <li  title="SecurityFrameworksEdge">
+            <a href="securityframeworksedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SecurityFrameworksEdge
+            </a>
+        </li>
+        <li  title="SecurityQuery">
+            <a href="securityquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SecurityQuery
+            </a>
+        </li>
+        <li  title="SecurityRule">
+            <a href="securityrule.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SecurityRule
+            </a>
+        </li>
+        <li  title="SecurityRulesConnection">
+            <a href="securityrulesconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SecurityRulesConnection
+            </a>
+        </li>
+        <li  title="SecurityRulesEdge">
+            <a href="securityrulesedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SecurityRulesEdge
+            </a>
+        </li>
+        <li  title="StarterMutation">
+            <a href="startermutation.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StarterMutation
+            </a>
+        </li>
+        <li  title="StarterQuery">
+            <a href="starterquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StarterQuery
+            </a>
+        </li>
+        <li  title="StarterResource">
+            <a href="starterresource.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StarterResource
+            </a>
+        </li>
+        <li  title="StarterResourceConnection">
+            <a href="starterresourceconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StarterResourceConnection
+            </a>
+        </li>
+        <li  title="StarterResourceEdge">
+            <a href="starterresourceedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StarterResourceEdge
+            </a>
+        </li>
+        <li  title="Stat">
+            <a href="stat.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Stat
+            </a>
+        </li>
+        <li  title="StatForecast">
+            <a href="statforecast.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StatForecast
+            </a>
+        </li>
+        <li  title="Stats">
+            <a href="stats.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Stats
+            </a>
+        </li>
+        <li  title="StatsQuery">
+            <a href="statsquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StatsQuery
+            </a>
+        </li>
+        <li  title="StatsRelatedEntity">
+            <a href="statsrelatedentity.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StatsRelatedEntity
+            </a>
+        </li>
+        <li  title="Tag">
+            <a href="tag.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Tag
+            </a>
+        </li>
+        <li  title="User">
+            <a href="user.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                User
+            </a>
+        </li>
+        <li  title="UserConnection">
+            <a href="userconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserConnection
+            </a>
+        </li>
+        <li  title="UserEdge">
+            <a href="useredge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserEdge
+            </a>
+        </li>
+        <li  title="UserEntityFields">
+            <a href="userentityfields.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserEntityFields
+            </a>
+        </li>
+        <li  title="UserInterestScore">
+            <a href="userinterestscore.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserInterestScore
+            </a>
+        </li>
+        <li  title="UserInterestScoreConnection">
+            <a href="userinterestscoreconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserInterestScoreConnection
+            </a>
+        </li>
+        <li  title="UserInterestScoreEdge">
+            <a href="userinterestscoreedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserInterestScoreEdge
+            </a>
+        </li>
+        <li  title="UserMutation">
+            <a href="usermutation.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserMutation
+            </a>
+        </li>
+        <li  title="UserPref">
+            <a href="userpref.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserPref
+            </a>
+        </li>
+        <li  title="UserQuery">
+            <a href="userquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserQuery
+            </a>
+        </li>
+        <li  title="__Directive">
+            <a href="directive.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Directive
+            </a>
+        </li>
+        <li  title="__EnumValue">
+            <a href="enumvalue.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __EnumValue
+            </a>
+        </li>
+        <li  title="__Field">
+            <a href="field.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Field
+            </a>
+        </li>
+        <li  title="__InputValue">
+            <a href="inputvalue.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __InputValue
+            </a>
+        </li>
+        <li  title="__Schema">
+            <a href="schema.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Schema
+            </a>
+        </li>
+        <li  title="__Type">
+            <a href="type.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Type
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Input Objects</h4>
+    <ul>
+        <li  title="ActionDefinitionFilter">
+            <a href="actiondefinitionfilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ActionDefinitionFilter
+            </a>
+        </li>
+        <li  title="ActionRequestInput">
+            <a href="actionrequestinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ActionRequestInput
+            </a>
+        </li>
+        <li  title="DerivedDataCachingHintsInput">
+            <a href="deriveddatacachinghintsinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DerivedDataCachingHintsInput
+            </a>
+        </li>
+        <li  title="DerivedDataProcessingRulesInput">
+            <a href="deriveddataprocessingrulesinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DerivedDataProcessingRulesInput
+            </a>
+        </li>
+        <li  title="EntityAggregationInput">
+            <a href="entityaggregationinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntityAggregationInput
+            </a>
+        </li>
+        <li  title="EntityGroupDefinitionInput">
+            <a href="entitygroupdefinitioninput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntityGroupDefinitionInput
+            </a>
+        </li>
+        <li  title="EntityGroupDynamicDefinitionInput">
+            <a href="entitygroupdynamicdefinitioninput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntityGroupDynamicDefinitionInput
+            </a>
+        </li>
+        <li  title="EntityQueryFilter">
+            <a href="entityqueryfilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntityQueryFilter
+            </a>
+        </li>
+        <li  title="EntitySearchFilter">
+            <a href="entitysearchfilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntitySearchFilter
+            </a>
+        </li>
+        <li  title="EntitySearchInfo">
+            <a href="entitysearchinfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntitySearchInfo
+            </a>
+        </li>
+        <li  title="EntitySearchInput">
+            <a href="entitysearchinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntitySearchInput
+            </a>
+        </li>
+        <li  title="EntitySearchTag">
+            <a href="entitysearchtag.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntitySearchTag
+            </a>
+        </li>
+        <li  title="EntitySearchTimeFilter">
+            <a href="entitysearchtimefilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntitySearchTimeFilter
+            </a>
+        </li>
+        <li  title="EntityTimeRangeFilter">
+            <a href="entitytimerangefilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntityTimeRangeFilter
+            </a>
+        </li>
+        <li  title="EntityTraversalFilterInput">
+            <a href="entitytraversalfilterinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntityTraversalFilterInput
+            </a>
+        </li>
+        <li  title="EntityTraversalInput">
+            <a href="entitytraversalinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntityTraversalInput
+            </a>
+        </li>
+        <li  title="EntityTraversalRecursionInfo">
+            <a href="entitytraversalrecursioninfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntityTraversalRecursionInfo
+            </a>
+        </li>
+        <li  title="EntityTraversalRecursionUntilInput">
+            <a href="entitytraversalrecursionuntilinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EntityTraversalRecursionUntilInput
+            </a>
+        </li>
+        <li  title="InsightFilter">
+            <a href="insightfilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InsightFilter
+            </a>
+        </li>
+        <li  title="InsightReclamationInput">
+            <a href="insightreclamationinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InsightReclamationInput
+            </a>
+        </li>
+        <li  title="ManagementEndpointAggregationInput">
+            <a href="managementendpointaggregationinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointAggregationInput
+            </a>
+        </li>
+        <li  title="ManagementEndpointCredentialMappingInput">
+            <a href="managementendpointcredentialmappinginput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointCredentialMappingInput
+            </a>
+        </li>
+        <li  title="ManagementEndpointCredentialsInput">
+            <a href="managementendpointcredentialsinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointCredentialsInput
+            </a>
+        </li>
+        <li  title="ManagementEndpointDeployToCloudProxyAgentInput">
+            <a href="managementendpointdeploytocloudproxyagentinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointDeployToCloudProxyAgentInput
+            </a>
+        </li>
+        <li  title="ManagementEndpointInput">
+            <a href="managementendpointinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointInput
+            </a>
+        </li>
+        <li  title="ManagementEndpointPropertyInput">
+            <a href="managementendpointpropertyinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointPropertyInput
+            </a>
+        </li>
+        <li  title="ManagementEndpointQueryFilter">
+            <a href="managementendpointqueryfilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ManagementEndpointQueryFilter
+            </a>
+        </li>
+        <li  title="MigrationAdminAssumptionInput">
+            <a href="migrationadminassumptioninput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationAdminAssumptionInput
+            </a>
+        </li>
+        <li  title="MigrationAggregationRuleInput">
+            <a href="migrationaggregationruleinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationAggregationRuleInput
+            </a>
+        </li>
+        <li  title="MigrationAssessmentEntityInput">
+            <a href="migrationassessmententityinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationAssessmentEntityInput
+            </a>
+        </li>
+        <li  title="MigrationAssumptionGroupEntityInput">
+            <a href="migrationassumptiongroupentityinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationAssumptionGroupEntityInput
+            </a>
+        </li>
+        <li  title="MigrationBasicEntityFilter">
+            <a href="migrationbasicentityfilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationBasicEntityFilter
+            </a>
+        </li>
+        <li  title="MigrationBasicEntityFilterList">
+            <a href="migrationbasicentityfilterlist.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationBasicEntityFilterList
+            </a>
+        </li>
+        <li  title="MigrationClusterListInput">
+            <a href="migrationclusterlistinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationClusterListInput
+            </a>
+        </li>
+        <li  title="MigrationClustersInput">
+            <a href="migrationclustersinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationClustersInput
+            </a>
+        </li>
+        <li  title="MigrationComputeAssumptionGroupInput">
+            <a href="migrationcomputeassumptiongroupinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationComputeAssumptionGroupInput
+            </a>
+        </li>
+        <li  title="MigrationCostInput">
+            <a href="migrationcostinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationCostInput
+            </a>
+        </li>
+        <li  title="MigrationCostOfOwnershipEntityInput">
+            <a href="migrationcostofownershipentityinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationCostOfOwnershipEntityInput
+            </a>
+        </li>
+        <li  title="MigrationCostValueInput">
+            <a href="migrationcostvalueinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationCostValueInput
+            </a>
+        </li>
+        <li  title="MigrationDatacenterAssumptionInput">
+            <a href="migrationdatacenterassumptioninput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationDatacenterAssumptionInput
+            </a>
+        </li>
+        <li  title="MigrationDirectionalFilter">
+            <a href="migrationdirectionalfilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationDirectionalFilter
+            </a>
+        </li>
+        <li  title="MigrationEntityFilter">
+            <a href="migrationentityfilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationEntityFilter
+            </a>
+        </li>
+        <li  title="MigrationEntityTraversalInput">
+            <a href="migrationentitytraversalinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationEntityTraversalInput
+            </a>
+        </li>
+        <li  title="MigrationGeneralAssumptionInput">
+            <a href="migrationgeneralassumptioninput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationGeneralAssumptionInput
+            </a>
+        </li>
+        <li  title="MigrationHostBreakupListInput">
+            <a href="migrationhostbreakuplistinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationHostBreakupListInput
+            </a>
+        </li>
+        <li  title="MigrationHostGroupsAssumptionsInput">
+            <a href="migrationhostgroupsassumptionsinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationHostGroupsAssumptionsInput
+            </a>
+        </li>
+        <li  title="MigrationInventoryGroupInput">
+            <a href="migrationinventorygroupinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationInventoryGroupInput
+            </a>
+        </li>
+        <li  title="MigrationNetworkAssumptionInput">
+            <a href="migrationnetworkassumptioninput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationNetworkAssumptionInput
+            </a>
+        </li>
+        <li  title="MigrationOnPremProfileInput">
+            <a href="migrationonpremprofileinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationOnPremProfileInput
+            </a>
+        </li>
+        <li  title="MigrationOSAssumptionsInput">
+            <a href="migrationosassumptionsinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationOSAssumptionsInput
+            </a>
+        </li>
+        <li  title="MigrationPricingConfigInput">
+            <a href="migrationpricingconfiginput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationPricingConfigInput
+            </a>
+        </li>
+        <li  title="MigrationRaidConfigurationInput">
+            <a href="migrationraidconfigurationinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationRaidConfigurationInput
+            </a>
+        </li>
+        <li  title="MigrationResourceBreakupListInput">
+            <a href="migrationresourcebreakuplistinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationResourceBreakupListInput
+            </a>
+        </li>
+        <li  title="MigrationResourceOutlierInput">
+            <a href="migrationresourceoutlierinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationResourceOutlierInput
+            </a>
+        </li>
+        <li  title="MigrationResourceOverCommitInput">
+            <a href="migrationresourceovercommitinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationResourceOverCommitInput
+            </a>
+        </li>
+        <li  title="MigrationSDDCListInput">
+            <a href="migrationsddclistinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationSDDCListInput
+            </a>
+        </li>
+        <li  title="MigrationSizerRecommendationInput">
+            <a href="migrationsizerrecommendationinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationSizerRecommendationInput
+            </a>
+        </li>
+        <li  title="MigrationSizingConfigInput">
+            <a href="migrationsizingconfiginput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationSizingConfigInput
+            </a>
+        </li>
+        <li  title="MigrationSoftwareAssumptionsInput">
+            <a href="migrationsoftwareassumptionsinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationSoftwareAssumptionsInput
+            </a>
+        </li>
+        <li  title="MigrationStorageAssumptionInput">
+            <a href="migrationstorageassumptioninput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationStorageAssumptionInput
+            </a>
+        </li>
+        <li  title="MigrationStorageConfigurationInput">
+            <a href="migrationstorageconfigurationinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationStorageConfigurationInput
+            </a>
+        </li>
+        <li  title="MigrationSupportCostAssumptionsInput">
+            <a href="migrationsupportcostassumptionsinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationSupportCostAssumptionsInput
+            </a>
+        </li>
+        <li  title="MigrationUserDefinedEntityTagsInput">
+            <a href="migrationuserdefinedentitytagsinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationUserDefinedEntityTagsInput
+            </a>
+        </li>
+        <li  title="MigrationVmcProfileInput">
+            <a href="migrationvmcprofileinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationVmcProfileInput
+            </a>
+        </li>
+        <li  title="MigrationVmExceptionInfoInput">
+            <a href="migrationvmexceptioninfoinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationVmExceptionInfoInput
+            </a>
+        </li>
+        <li  title="MigrationVmExceptionsInput">
+            <a href="migrationvmexceptionsinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MigrationVmExceptionsInput
+            </a>
+        </li>
+        <li  title="NetworkEntityFlowTypeInput">
+            <a href="networkentityflowtypeinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                NetworkEntityFlowTypeInput
+            </a>
+        </li>
+        <li  title="QueryFilter">
+            <a href="queryfilter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                QueryFilter
+            </a>
+        </li>
+        <li  title="QuerySort">
+            <a href="querysort.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                QuerySort
+            </a>
+        </li>
+        <li  title="SecurityAggregationInput">
+            <a href="securityaggregationinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SecurityAggregationInput
+            </a>
+        </li>
+        <li  title="SecurityFindingsFilterInput">
+            <a href="securityfindingsfilterinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SecurityFindingsFilterInput
+            </a>
+        </li>
+        <li  title="SecurityIntRangeInput">
+            <a href="securityintrangeinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SecurityIntRangeInput
+            </a>
+        </li>
+        <li  title="SecurityRulesFilterInput">
+            <a href="securityrulesfilterinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SecurityRulesFilterInput
+            </a>
+        </li>
+        <li  title="SecurityTimeRangeInput">
+            <a href="securitytimerangeinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SecurityTimeRangeInput
+            </a>
+        </li>
+        <li  title="StarterConnectionInput">
+            <a href="starterconnectioninput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StarterConnectionInput
+            </a>
+        </li>
+        <li  title="StarterResourceInput">
+            <a href="starterresourceinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StarterResourceInput
+            </a>
+        </li>
+        <li  title="StatsForecastInput">
+            <a href="statsforecastinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StatsForecastInput
+            </a>
+        </li>
+        <li  title="StatsInput">
+            <a href="statsinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StatsInput
+            </a>
+        </li>
+        <li  title="StatsRelatedEntitiesQueryInput">
+            <a href="statsrelatedentitiesqueryinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StatsRelatedEntitiesQueryInput
+            </a>
+        </li>
+        <li  title="TagInput">
+            <a href="taginput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TagInput
+            </a>
+        </li>
+        <li  title="UserPrefInput">
+            <a href="userprefinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UserPrefInput
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Directives</h4>
+    <ul>
+        <li  title="deprecated">
+            <a href="deprecated.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                deprecated
+            </a>
+        </li>
+        <li  title="include">
+            <a href="include.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                include
+            </a>
+        </li>
+        <li  title="skip">
+            <a href="skip.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                skip
+            </a>
+        </li>
+        <li  title="specifiedBy">
+            <a href="specifiedby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                specifiedBy
+            </a>
+        </li>
+    </ul>
+</div>
+        </div>
+    </nav>
+    <main><section class="title slds-theme--inverse">
+    <div class="container slds-grid">
+        <div>
+        <button class="slds-button js-toggle-navigation less-than-medium">
+            <i class="material-icons slds-button__icon slds-button__icon--left">menu</i>
+            <span class="slds-text-title--caps">Types<span>
+        </button>
+        </div>
+        </div>
+    </div>
+    <div class="container">
+        <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
+        <h1 class="slds-text-heading--large">SecurityFramework</h1>
+        <div class="slds-text-body--regular"><p>Describes a security framework</p>
+</div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h2 id="graphql-schema-definition" class="graphdoc-section__title slds-text-heading--medium slds-m-top--small">
+            <a href="#graphql-schema-definition">
+                <i class="material-icons">link</i>
+            </a>
+            GraphQL Schema definition
+        </h2>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">SecurityFramework</span> <span class="keyword operator ts">implements</span> <a class="support type" href="node.doc.html">Node</a>, <a class="support type" href="hyperlinked.doc.html">HyperLinked</a> {</li><li></li><li><span class="tab"><span class="comment line">#   Node-compatible opaque global identifier</span></span></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Unique identifier of the framework</span></span></li><li><span class="tab"><span class="meta">frameworkId</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Name of this framework</span></span></li><li><span class="tab"><span class="meta">displayName</span>: <a class="support type" href="localizedstring.doc.html">LocalizedString</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Brief description about this framework</span></span></li><li><span class="tab"><span class="meta">description</span>: <a class="support type" href="localizedstring.doc.html">LocalizedString</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Version of the this framework. e.g. 1.0.0, Rev. 2</span></span></li><li><span class="tab"><span class="meta">version</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Date when this framework was published. e.g. 2018-02-20</span></span></li><li><span class="tab"><span class="meta">publicationDate</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Organization who authored this compliance framework. e.g. CIS</span></span></li><li><span class="tab"><span class="meta">author</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Source of the generated finding. Accepted only Native and Custom.</span></span></li><li><span class="tab"><span class="meta">source</span>: <a class="support type" href="securityfindingsource.doc.html">SecurityFindingSource</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Indicated the framework is enabled for this organization</span></span></li><li><span class="tab"><span class="meta">enabled</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Indicates if the framework is locked for this organization. e.g Free Tier</span></span></li><li><span class="tab"><span class="comment line">#   The value of the field is not persisted but rather generated on the fly on </span></span></li><li><span class="tab"><span class="comment line">#   request</span></span></li><li><span class="tab"><span class="meta">locked</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The time this framework was created</span></span></li><li><span class="tab"><span class="meta">creationTime</span>: <a class="support type" href="datetime.doc.html">DateTime</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The last time this framework was successfully updated</span></span></li><li><span class="tab"><span class="meta">lastUpdateTime</span>: <a class="support type" href="datetime.doc.html">DateTime</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Optional hyperlink(s) to visualize specific framework data in detail</span></span></li><li><span class="tab"><span class="meta">hyperlinks</span>: [<a class="support type" href="hyperlink.doc.html">HyperLink</a>!] </span></li><li>}</li></ul></code>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h2 id="require-by" class="graphdoc-section__title slds-text-heading--medium slds-m-top--small">
+            <a href="#require-by">
+                <i class="material-icons">link</i>
+            </a>
+            Require by
+        </h2>
+        <ul class="require-by"><li><a href="securityframeworksconnection.doc.html" title="SecurityFrameworksConnection - ">SecurityFrameworksConnection<em>null</em></a><li><li><a href="securityframeworksedge.doc.html" title="SecurityFrameworksEdge - ">SecurityFrameworksEdge<em>null</em></a><li></ul>
+    </div>
+</section>
+<footer>
+<div class="container slds-p-around--large">
+    <p class="slds-text-align--right slds-text-title--caps">
+        Generated with <a href="https://github.com/2fd/graphdoc#readme" target="_blank">graphdoc 2.4.0</a>
+    </p>
+</div>
+</footer>
+</main>
+    <script src="./scripts/focus-active.js"></script>
+    <script src="./scripts/filter-types.js"></script>
+    <script src="./scripts/toggle-navigation.js"></script>
+</body>

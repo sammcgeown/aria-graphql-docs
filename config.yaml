@@ -1,0 +1,33 @@
+# To fetch schema from
+introspection: https://api.mgmt.cloud.vmware.com/ensemble/graphql
+
+servers: # same format as for OpenAPI Specification
+  - url: https://api.mgmt.cloud.vmware.com/ensemble/graphql
+    description: Aria GraphQL Endpoint
+
+info: # same format as for OpenAPI Specification
+    title: Aria GraphQL Documentation
+    description: |
+      Markdown enabled description of your api.
+
+      GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools.
+
+ # define your domains by providing a set of usecases
+domains:
+  - name: Top Level Menu Section # Name of the domain
+    description: Description  # Description of the domain
+    usecases:         
+     - name: Authorization Mutation
+       description: Markdown enabled description for operation # Opearation description
+       query: mutation.authMutation
+     - name: Query Entity # Operation name
+       description: Markdown enabled description for operation # Opearation description
+       query: query.entityQuery
+       select: managementEndpointId entityType
+
+securityDefinitions:
+  Bearer Token:
+    type: apiKey
+    name: authorization
+    description: Provides API Key access to the cheese
+    in: header
