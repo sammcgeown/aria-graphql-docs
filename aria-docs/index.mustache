@@ -1,52 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html class="dark" lang="en">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <link rel="stylesheet" href="https://unpkg.com/@clr/ui/clr-ui-dark.min.css" />
+    <link type="text/css" rel="stylesheet" href="./styles/aria-docs.css" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="./assets/code.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
+    <link rel="stylesheet" href="./styles/clr-ui.min.css" />
     <title>{{title}}</title>
-    {{{headers}}}
 </head>
-<body class="slds-scrollable--y">
-    <nav class="slds-grid slds-grid--vertical slds-col--rule-right">
-        <header class="slds-p-around--medium slds-col slds-shrik slds-grow-none">
-            <button class="slds-button slds-button--icon slds-float--right js-toggle-navigation less-than-medium">
-                <i class="material-icons">close</i>
-            </button>
-            {{#projectPackage.graphdoc.logo}}
-                {{{projectPackage.graphdoc.logo}}}
-            {{/projectPackage.graphdoc.logo}}
-            {{^projectPackage.graphdoc.logo}}
-                <h3 class="slds-text-heading--medium"><a href="{{{projectPackage.graphdoc.baseUrl}}}">GraphQL Schema</a></h3>
-            {{/projectPackage.graphdoc.logo}}
-            <div class="slds-p-top--small">
-                <input id="type-search" type="text" placeholder="Search a type" autofocus="" class="slds-input" />
-            </div>
-        </header>
-        <div id="navication-scroll" class="slds-scrollable--y slds-col slds-grow">
-            {{> nav}}
-        </div>
-    </nav>
-    <main>{{> main}}</main>
+<body>
+<div class="main-container">
+<header class="header-1">
+    <div class="branding">
+    <a class="navbar-brand-img" href="/">
+      <img alt="VMware Aria Hub" src="aria-hub.png" style="width: 40px; height: 40px; margin-right: 0.55rem;">
+      <span class="title">VMware Aria GraphQL API Documentation</span>
+    </a>  
+  </div>
+  <form class="search">
+    <label for="search_input">
+        <input id="type-search" type="text" placeholder="Search types">
+    </label>
+  </form>
+  <div class="header-actions">
+      <a href="/ensemble/altair" class="nav-link nav-icon-text">
+        <span class="nav-text">Try out GraphQL</span>
+        <img alt="Altair GraphQL Client" src="https://github.com/altair-graphql/altair/blob/master/icons/android-icon-192x192.png?raw=true" style="width: 30px; height: 30px;">
+      </a>
+  </div>
+</header>
+
+<div class="content-container">
+    <div class="content-area col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <div class="clr-row">
+        {{> main}}
+      </div>
+    </div>
+    {{> nav}}
+</div>
+
+</div>
     <script src="./scripts/focus-active.js"></script>
     <script src="./scripts/filter-types.js"></script>
     <script src="./scripts/toggle-navigation.js"></script>
-    {{#projectPackage.graphdoc.ga}}
-    <script>
-        (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date(); a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', '{{projectPackage.graphdoc.ga}}', 'auto');
-        ga('send', 'pageview');
-
-    </script>
-    {{/projectPackage.graphdoc.ga}}
 </body>

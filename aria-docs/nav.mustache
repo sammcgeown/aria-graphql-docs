@@ -1,15 +1,25 @@
 {{! Only navs varaible is defined: @example: navs: [ { title: String, items: [ { href: String, text: String } -- MORE ITEMS
---- ] } -- MORE NAVS -- ] }}{{#navigations}}
-<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
-    <h4 class="slds-text-title--caps slds-p-around--medium">{{title}}</h4>
-    <ul>
-        {{#items}}
-        <li {{#isActive}}class="slds-is-active"{{/isActive}} title="{{text}}">
-            <a href="{{{href}}}" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+--- ] } -- MORE NAVS -- ] }}
+<nav class="sidenav clr-col-12 clr-col-sm-12 clr-col-md-12 clr-col-lg-6 clr-col-xl-6">
+  <section class="sidenav-content">
+    {{#navigations}}
+    <section class="nav-group collapsible">
+      <input id="{{title}}" type="checkbox">
+      <label for="{{title}}">{{title}}</label>
+      <ul class="nav-list">
+              {{#items}}
+        <li title="{{text}}">
+            <a href="{{{href}}}" class="nav-link {{#isActive}}active{{/isActive}}">
                 {{text}}
             </a>
         </li>
         {{/items}}
-    </ul>
-</div>
-{{/navigations}}
+    </section>
+    {{/navigations}}
+    {{#graphdocPackage}}
+    <p>Generated with <a href="{{{graphdocPackage.homepage}}}" target="_blank">graphdoc {{graphdocPackage.version}}</a></p>
+    {{/graphdocPackage}}
+
+
+  </section>
+</nav>
