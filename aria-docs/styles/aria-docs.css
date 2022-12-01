@@ -1,0 +1,57 @@
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+code.highlight {
+    display: block;
+    background: #4d4d4c;
+    position: relative;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.16);
+    padding: 0.125rem;
+    padding-top: 1.5rem;
+    border-radius: 0.25rem;
+    min-width: 50rem;
+    width: 90%;
+}
+
+code.highlight::after,
+code.highlight::before {
+    content: "";
+    display: block;
+    height: 0.75rem;
+    width: 0.75rem;
+    position: absolute;
+    top: 0.5rem;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+code.highlight::before {
+    background: #c23934;
+    left: 0.5rem;
+}
+
+code.highlight::after {
+    background: #676765;
+    left: 1.75rem;
+}
+
+.aria-hide {
+    display: none;
+}

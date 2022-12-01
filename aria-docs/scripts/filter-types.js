@@ -1,6 +1,6 @@
 (function () {
-    var HIDE_CLASS = 'slds-hide';
-    var ITEM_CLASS = 'slds-item';
+    var HIDE_CLASS = 'aria-hide';
+    var ITEM_CLASS = '';
 
     /**
      * @class Item
@@ -84,7 +84,7 @@
      * @var {ItemList} items
      * @var {HTMLInputElement} input
      */
-    var items = ItemList.fromSelector('nav .slds-navigation-list--vertical li');
+    var items = ItemList.fromSelector('nav .nav-group li');
     var input = document.getElementById('type-search');
     var lastMatch = '';
 
